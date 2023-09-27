@@ -1,8 +1,9 @@
 # Parte 1
 
-def sum arr
-  # COMPLETA TU CODIGO
+def sum(array)
+  array.reduce(0, :+)
 end
+
 
 def max_2_sum arr
   # COMPLETA TU CODIGO
