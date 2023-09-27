@@ -1,8 +1,8 @@
 # Parte 1
 
 def sum(array)
-
-end
+  array.reduce(0, :+)
+  end
 
 
 def max_2_sum(array)
