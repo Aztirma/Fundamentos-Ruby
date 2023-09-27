@@ -20,11 +20,19 @@ end
 
 def hello(name)
   "Hello, #{name}"
+  puts hello('Checha') # Esto imprimirá "Hello, Checha" en la consola
+
 end
 
-def starts_with_consonant? s
-  # COMPLETA TU CODIGO
+def start_with_consonant?(s)
+  # Verifica si la cadena comienza con una consonante (mayúscula o minúscula)
+  if s =~ /^[b-df-hj-np-tv-z]/i
+    return true
+  else
+    return false
+  end
 end
+
 
 def binary_multiple_of_4? s
   # COMPLETA TU CODIGO
