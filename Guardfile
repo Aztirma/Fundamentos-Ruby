@@ -10,4 +10,7 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(rspec.spec_helper) { rspec.spec_dir }
   watch(rspec.spec_support) { rspec.spec_dir }
   watch(rspec.spec_files)
+
+  # Watch files in the lib directory
+  watch("lib/**/*.rb") { rspec.spec_files }
 end

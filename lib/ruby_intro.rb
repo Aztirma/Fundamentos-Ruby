@@ -6,7 +6,8 @@ end
 
 
 def max_2_sum(array)
-
+  sorted_array = array.sort.reverse
+  sum_of_max_2 = sorted_array.take(2).sum
 end
 
 
