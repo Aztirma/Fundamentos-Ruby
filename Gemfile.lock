@@ -49,6 +49,7 @@ GEM
     rspec-support (3.12.1)
     shellany (0.0.1)
     thor (1.2.2)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw-ucrt
@@ -56,6 +57,7 @@ PLATFORMS
 DEPENDENCIES
   guard-rspec
   rspec (~> 3.12)
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.4.19
