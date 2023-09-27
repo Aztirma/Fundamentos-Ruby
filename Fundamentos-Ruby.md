@@ -2,7 +2,7 @@
 
 # **Parte 1: Arreglos, hashes y enumerables**
 
-## ****Método 1: `sum(array)`**
+## **Método 1: `sum(array)`**
 
 Primero, definimos el método **`sum(array)`** en el archivo **`lib/ruby_intro.rb`**. Este método toma un arreglo de números enteros como argumento y devuelve la suma de sus elementos. Si el arreglo está vacío, el método debe devolver cero. Aquí está mi código:
 
