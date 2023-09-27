@@ -32,9 +32,17 @@ def starts_with_consonant?(s)
 end
 
 
-def binary_multiple_of_4? s
-  # COMPLETA TU CODIGO
+def binary_multiple_of_4?(s)
+  # Verifica si la cadena es un número binario válido
+  if s.match(/^[01]+$/)
+    # Convierte la cadena a un número entero en base 2 y verifica si es múltiplo de 4
+    binary_number = s.to_i(2)
+    return binary_number % 4 == 0
+  else
+    return false
+  end
 end
+
 
 # Parte 3
 
