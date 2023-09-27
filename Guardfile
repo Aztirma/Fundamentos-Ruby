@@ -12,5 +12,5 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(rspec.spec_files)
 
   # Watch files in the lib directory
-  watch("lib/**/*.rb") { rspec.spec_files }
+  watch(%r{^lib/(.+)\.rb$}) { |m| "spec/#{m[1]}_spec.rb" }
 end
