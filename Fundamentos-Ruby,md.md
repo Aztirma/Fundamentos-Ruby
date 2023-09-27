@@ -22,7 +22,7 @@ rspec -e '#sum' spec/parte1_spec.rb
 
 Obteniendo una salida como la siguiente: 
 
-![Untitled](Fundamentos-Ruby%206e9372ccf9924e68834bde4c3543760d/Untitled.png)
+![Alt text](Imagenes/Untitled.png)
 
 Lo cual significa que las pruebas relacionadas con el método **`sum`** se ejecutaron correctamente y no se detectaron errores.
 
@@ -45,7 +45,7 @@ rspec -e '#max_2_sum' spec/parte1_spec.rb
 
 Obteniendo una salida como la siguiente: 
 
-![Untitled](Fundamentos-Ruby%206e9372ccf9924e68834bde4c3543760d/Untitled%201.png)
+![Alt text](<Imagenes/Untitled 1.png>)
 
 Lo cual significa que las pruebas relacionadas con el método **`max_2_sum`** se ejecutaron correctamente y no se detectaron errores.
 
@@ -67,6 +67,6 @@ rspec -e '#sum_to_n' spec/parte1_spec.rb
 
 De este modo se obtuvo la siguiente salida:
 
-![Untitled](Fundamentos-Ruby%206e9372ccf9924e68834bde4c3543760d/Untitled%202.png)
+![Alt text](<Imagenes/Untitled 2.png>)
 
 Lo cual significa que las pruebas relacionadas con el método**`sum_to_n?(array, n)`** se ejecutaron correctamente y no se detectaron errores.
