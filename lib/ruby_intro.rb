@@ -47,5 +47,52 @@ end
 # Parte 3
 
 class BookInStock
-# COMPLETA TU CODIGO
+  # Constructor de la clase
+  def initialize(isbn, price)
+    validate_input(isbn, price)
+    set_isbn(isbn)
+    set_price(price)
+  end
+
+  # Getter y Setter para el número ISBN
+  def isbn
+    @isbn
+  end
+
+  def isbn=(new_isbn)
+    set_isbn(new_isbn)
+  end
+
+  # Getter y Setter para el precio
+  def price
+    @price
+  end
+
+  def price=(new_price)
+    set_price(new_price)
+  end
+
+  # Método para formatear el precio como una cadena con signo de dólar y dos decimales
+  def price_as_string
+    "$%.2f" % @price
+  end
+
+  private
+
+  # Verificar si el número ISBN es una cadena no vacía y si el precio es mayor que cero
+  def validate_input(isbn, price)
+    if isbn.empty? || price <= 0
+      raise ArgumentError, "ISBN no puede ser una cadena vacía y el precio debe ser mayor que cero"
+    end
+  end
+
+  # Asignar valores a los atributos de la instancia
+  def set_isbn(new_isbn)
+    @isbn = new_isbn
+  end
+
+  def set_price(new_price)
+    @price = new_price
+  end
 end
+
