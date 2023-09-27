@@ -20,8 +20,6 @@ end
 
 def hello(name)
   "Hello, #{name}"
-  puts hello('Checha') # Esto imprimirá "Hello, Checha" en la consola
-
 end
 
 def start_with_consonant?(s)
