@@ -15,7 +15,29 @@ describe '#hello' do
   end
 end
 
-
+describe '#starts_with_consonant?' do
+  it 'deberia ser definido' do
+    expect { starts_with_consonant?('d') }.not_to raise_error#::NoMethodError)
+  end
+  it 'clasifica casos verdaderos' do
+    expect(starts_with_consonant?('v')).to be_truthy, "'v' es una consonante"
+    %w[v vest Veeee crypt].each do |string|
+      expect(starts_with_consonant?(string)).to be_truthy, "Resultado incorrecto para la entrada: \"#{string}\""
+    end
+  end
+  it 'clasifica casos falsos' do
+    expect(starts_with_consonant?('a')).to be_falsy, "'a' no es una consonante"
+    %w[asdfgh Unix].each do |string|
+      expect(starts_with_consonant?(string)).to be_falsy, "Resultado incorrecto para la entrada: \"#{string}\""
+    end
+  end
+  it 'funciona en la cadena vacia'  do
+    expect(starts_with_consonant?('')).to be_falsy
+  end
+  it 'funciona con elementos que no son letras' do
+    expect(starts_with_consonant?('#foo')).to be_falsy
+  end
+end
 
 
 describe '#binary_multiple_of_4?' do

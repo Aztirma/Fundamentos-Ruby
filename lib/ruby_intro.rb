@@ -22,7 +22,7 @@ def hello(name)
   "Hello, #{name}"
 end
 
-def start_with_consonant?(s)
+def starts_with_consonant?(s)
   # Verifica si la cadena comienza con una consonante (mayúscula o minúscula)
   if s =~ /^[b-df-hj-np-tv-z]/i
     return true
