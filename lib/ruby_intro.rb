@@ -19,7 +19,7 @@ end
 # Parte 2
 
 def hello(name)
-  # COMPLETA TU CODIGO
+  "Hello, #{name}"
 end
 
 def starts_with_consonant? s
