@@ -12,7 +12,7 @@ array.reduce(0, :+)
 end
 ```
 
-Luego, ejecuté las pruebas asociadas a este método usando el siguiente comando en la terminal:
+Luego, ejecutamos las pruebas asociadas a este método usando el siguiente comando en la terminal:
 
 ```ruby
 rspec -e '#sum' spec/parte1_spec.rb
@@ -26,7 +26,7 @@ Obteniendo una salida como la siguiente:
 
 Este resultado significa que todas las pruebas asociadas con el método **`sum`** se ejecutaron con éxito y no se detectaron errores. Además, el método **`sum`** se comporta según lo esperado, proporcionando la suma correcta de elementos en el arreglo de entrada.
 
-## ****Método 2: `max_2_sum(array)`**
+## **Método 2: `max_2_sum(array)`**
 
 A continuación, definimos el método **`max_2_sum(array)`** en el mismo archivo **`lib/ruby_intro.rb`**. Este método toma un arreglo de números enteros como argumento y devuelve la suma de los dos elementos más grandes. Si el arreglo está vacío, el método debe devolver cero. Aquí está mi código:
 
@@ -37,7 +37,7 @@ sum_of_max_2 = sorted_array.take(2).sum
 end
 ```
 
-Luego, ejecuté las pruebas asociadas a este método usando el siguiente comando en la terminal: 
+Luego, ejecutamos las pruebas asociadas a este método usando el siguiente comando en la terminal: 
 
 ```ruby
 rspec -e '#max_2_sum' spec/parte1_spec.rb
@@ -47,9 +47,9 @@ Obteniendo una salida como la siguiente:
 
 ![Alt text](<Imagenes/Untitled 2.png>)
 
-El resultado de las pruebas confirma que todas las pruebas asociadas con el método `max_2_sum` se ejecutaron exitosamente, sin detectar errores. Esto demuestra que el método `max_2_sum` está funcionando según lo esperado, proporcionando la suma correcta de los dos elementos más grandes en el arreglo de entrada, incluso en casos especiales como cuando los dos valores más grandes son iguales.
+El resultado de las pruebas nos dice que todas las pruebas asociadas con el método `max_2_sum` se ejecutaron exitosamente, sin detectar errores. Esto demuestra que el método `max_2_sum` está funcionando según lo esperado, proporcionando la suma correcta de los dos elementos más grandes en el arreglo de entrada, incluso en casos especiales como cuando los dos valores más grandes son iguales.
 
-## ****Método 3: `sum_to_n?(array, n)`**
+## **Método 3: `sum_to_n?(array, n)`**
 
 Finalmente, definimos el método **`sum_to_n?(array, n)`** en el mismo archivo **`lib/ruby_intro.rb`**. Este método toma un arreglo de números enteros y un número entero adicional **`n`** como argumentos. El método verifica si hay dos elementos en el arreglo cuya suma sea igual a **`n`**. Utilicé el método **`combination`** para generar todas las combinaciones posibles de dos elementos y verifiqué si alguna de ellas sumaba a **`n`**. Aquí está mi código:
 
@@ -69,13 +69,13 @@ De este modo se obtuvo la siguiente salida:
 
 ![Alt text](<Imagenes/Untitled 3.png>)
 
-La captura de pantalla adjunta muestra el resultado de la ejecución de las pruebas. En este caso, las pruebas relacionadas con el método **`sum_to_n?(array, n)`** se ejecutaron exitosamente y no se detectaron errores. Esto demuestra que el método **`sum_to_n?(array, n)`** está funcionando de según los esperando, verificando con precisión si existen dos elementos cuya suma sea igual a **`n.`**
+ En este caso, las pruebas relacionadas con el método **`sum_to_n?(array, n)`** se ejecutaron exitosamente y no se detectaron errores. Esto demuestra que el método **`sum_to_n?(array, n)`** está funcionando de según los esperando, verificando con precisión si existen dos elementos cuya suma sea igual a **`n.`**
 
 # **Parte 2: Cadenas y expresiones regulares**
 
-# ****Método 1: `hello(name)`**
+# **Método 1: `hello(name)`**
 
-Comencé definiendo el método **`hello`** en el archivo **`lib/ruby_intro.rb`**. Este método toma un argumento **`name`** y devuelve una cadena de saludo que incluye el nombre proporcionado.
+Comenzamos definiendo el método **`hello`** en el archivo **`lib/ruby_intro.rb`**. Este método toma un argumento **`name`** y devuelve una cadena de saludo que incluye el nombre proporcionado.
 
 ```ruby
 def hello(name)
@@ -83,7 +83,7 @@ def hello(name)
 end
 ```
 
-Luego, ejecuté las pruebas relacionadas con el método **`hello`** utilizando el comando **`rspec -e '#hello' spec/parte2_spec.rb`**. 
+Luego, ejecutamos las pruebas relacionadas con el método **`hello`** utilizando el comando **`rspec -e '#hello' spec/parte2_spec.rb`**. 
 
 ```ruby
 rspec -e '#hello' spec/parte2_spec.rb
@@ -93,9 +93,9 @@ rspec -e '#hello' spec/parte2_spec.rb
 
 ![Alt text](<Imagenes/Untitled 4.png>)
 
-Después de la ejecución de las pruebas, obtuve la siguiente salida que mostraba que todas las pruebas asociadas con el método **`hello`** se ejecutaron exitosamente. Esto confirmó que mi método **`hello`** funciona como se esperaba, devolviendo la cadena de saludo correcta.
+Después de la ejecución de las pruebas, obtuvimos la siguiente salida que mostraba que todas las pruebas asociadas con el método **`hello`** se ejecutaron exitosamente. Esto confirmó que el método **`hello`** funciona como se esperaba, devolviendo la cadena de saludo correcta.
 
-# ****Método 2: `starts_with_consonant?(s)`**
+# **Método 2: `starts_with_consonant?(s)`**
 
 Luego, definimos el método **`starts_with_consonant?`** en el archivo **`lib/ruby_intro.rb`**. Este método toma una cadena **`s`** como argumento y utiliza una expresión regular para verificar si la cadena comienza con una consonante.
 
@@ -111,13 +111,13 @@ def starts_with_consonant?(s)
 end
 ```
 
-Continué ejecutando las pruebas relacionadas con el método **`starts_with_consonant?`** con el comando **`rspec -e '#starts_with_consonant?' spec/parte2_spec.rb`**. Estas pruebas se encargaron de comprobar si el método identificaba correctamente si una cadena empezaba con una consonante.
+Continuamos ejecutando las pruebas relacionadas con el método **`starts_with_consonant?`** con el comando **`rspec -e '#starts_with_consonant?' spec/parte2_spec.rb`**. Estas pruebas se encargaron de comprobar si el método identificaba correctamente si una cadena empezaba con una consonante.
 
 ```ruby
 rspec -e '#starts_with_consonant?' spec/parte2_spec.rb
 ```
 
-Después de ejecutar las pruebas, vi que todas las pruebas relacionadas con el método **`starts_with_consonant?`** se ejecutaron con éxito. Esto confirmó que mi método **`starts_with_consonant?`** está funcionando como se esperaba.
+Después de ejecutar las pruebas, se observa que todas las pruebas relacionadas con el método **`starts_with_consonant?`** se ejecutaron con éxito. Esto confirmó que el método está funcionando como se esperaba.
 
 ![Alt text](<Imagenes/Untitled 5.png>)
 
@@ -137,13 +137,13 @@ def binary_multiple_of_4?(s)
 end
 ```
 
-Seguí ejecutando las pruebas relacionadas con el método **`binary_multiple_of_4?`** utilizando el comando **`rspec -e '#binary_multiple_of_4?' spec/parte2_spec.rb`**. Estas pruebas evaluaron si el método identificaba correctamente si una cadena era un número binario múltiplo de 4.
+Seguimos ejecutando las pruebas relacionadas con el método **`binary_multiple_of_4?`** utilizando el comando **`rspec -e '#binary_multiple_of_4?' spec/parte2_spec.rb`**. Estas pruebas evaluaron si el método identificaba correctamente si una cadena era un número binario múltiplo de 4.
 
 ```ruby
 rspec -e '#binary_multiple_of_4?' spec/parte2_spec.rb
 ```
 
-Después de las pruebas, vi que todas se ejecutaron exitosamente. Esto demostró que mi método **`binary_multiple_of_4?`** está implementado correctamente y funciona según lo esperado.
+Después de las pruebas, observamos que todas se ejecutaron exitosamente. Esto demostró que el método **`binary_multiple_of_4?`** está implementado correctamente y funciona según lo esperado.
 
 ![Alt text](<Imagenes/Untitled 6.png>)
 
