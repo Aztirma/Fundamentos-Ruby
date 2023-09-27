@@ -5,9 +5,11 @@ def sum(array)
 end
 
 
-def max_2_sum arr
-  # COMPLETA TU CODIGO
+def max_2_sum(array)
+  sorted_array = array.sort.reverse
+  sum_of_max_2 = sorted_array.take(2).sum
 end
+
 
 def sum_to_n? arr, n
   # COMPLETA TU CODIGO
