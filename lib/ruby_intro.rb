@@ -1,7 +1,7 @@
 # Parte 1
 
 def sum(array)
-
+  array.reduce(0, :+)
 end
 
 
