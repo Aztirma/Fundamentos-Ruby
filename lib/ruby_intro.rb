@@ -14,7 +14,7 @@ end
 def sum_to_n?(array, n)
   array.combination(2).any? { |a, b| a + b == n }
 end
-
+ 
 
 # Parte 2
 

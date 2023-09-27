@@ -3,19 +3,19 @@
 require_relative '../lib/ruby_intro.rb'
 
 describe 'Introduccion a Ruby' do
-  describe '#sum' do
+  describe '#sum' do  #asegura que la función este presente y sea invocable?
     it 'deberia ser definido' do
       expect { sum([1, 3, 4]) }.not_to raise_error
     end
 
     it 'retorna la suma correcta'  do
-      expect(sum([1, 2, 3, 4, 5])).to be_a_kind_of Integer
-      expect(sum([1, 2, 3, 4, 5])).to eq(15)
-      expect(sum([1, 2, 3, 4, -5])).to eq(5)
-      expect(sum([1, 2, 3, 4, -5, 5, -100])).to eq(-90)
+      expect(sum([1, 2, 3, 4, 5])).to be_a_kind_of Integer 
+      expect(sum([1, 2, 3, 4, 5])).to eq(15) #verifica que la suma sea igual a 15
+      expect(sum([1, 2, 3, 4, -5])).to eq(5) # igual a 5
+      expect(sum([1, 2, 3, 4, -5, 5, -100])).to eq(-90) # iguala -90
     end
 
-    it 'trabaja sobre el arreglo vacio' do
+    it 'trabaja sobre el arreglo vacio' do #al llamar con un arreglo vacio devuelve 0
       expect { sum([]) }.not_to raise_error
       expect(sum([])).to be_zero
     end
